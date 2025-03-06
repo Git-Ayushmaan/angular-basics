@@ -13,4 +13,9 @@ export class AppComponent {
     this.title = 'Hello from Bridgelabz';
   }
   image ="BL-logo.jpg";
+  url = "https://www.bridgelabz.com";
+  onClick($event: any){
+    console.log("Save button is clicked!", $event);
+    window.open(this.url, "_blank");
+}
 }
