@@ -12,4 +12,5 @@ export class AppComponent {
   ngOnInit(){
     this.title = 'Hello from Bridgelabz';
   }
+  image ="BL-logo.jpg";
 }
