@@ -17,6 +17,15 @@
     width: 200px;
     font-size: 1.2rem;
   }
+
+  .error-output {
+    color: red;
+    font-size: 1.2rem;
+    display: block;
+    margin: 5px auto;
+    width: 200px;
+    text-align: center;
+  }
 </style>
 
 <main class="main">
@@ -26,7 +35,8 @@
 </div>
 
 <div>
-    <input type="text" [(ngModel)]="userName" placeholder="Enter your name" />
+    <input (input)= "onInput($event)" type="text" [(ngModel)]="userName" placeholder="Enter your name" />
+    <span class = "error-output">{{this.nameError}}</span>
 </div>
 </main>
 <router-outlet />
